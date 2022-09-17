@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+Register
+{% endblock %}
+
+{% block main %}
+
+<main class="log">
+    <div class="d-flex flex-column align-items-center container-fluid w-25 text-center">
+        <a href="/login">
+            <img class="logo" src="/static/assets/logo.png" alt="logo">
+        </a>
+        <form action="/register" method="post">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Name" id="name" name="name" autofocus>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" id="username" name="username">
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="Password" id="password" name="password">
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="Confirm password" id="confirmation"
+                    name="confirmation">
+            </div>
+            <button type="submit" class="btn btn-outline-warning w-100">Register</button>
+        </form>
+        <p class="text-light pt-3">Already have an account? <a class="text-warning" href="/login">Log In</a></p>
+    </div>
+</main>
+{% endblock %}

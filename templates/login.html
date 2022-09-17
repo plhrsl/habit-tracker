@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block main %}
+
+<main class="log" >
+    <div class="d-flex flex-column align-items-center py-5 container-fluid w-25 text-center ">
+        <a href="/login">
+            <img class="logo" src="/static/assets/logo.png" alt="logo">
+        </a>
+        <form action="/login" method="post">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" id="username" name="username" autofocus>
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="Password" id="password" name="password">
+            </div>
+            <button type="submit" class="btn btn-outline-warning w-100">Log In</button>
+        </form>
+        <p class="text-light pt-3">New user? <a class="text-warning" href="/register">Register</a></p>
+    </div>
+</main>
+{% endblock %}
