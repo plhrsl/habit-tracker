@@ -236,15 +236,8 @@ def delete(id):
     except:
         flash("There was an error deleting the habit...")
         return redirect("/habits")
-
-
-@app.route("/pomodoro-timer")
-def pomodoro_timer():
-    if session.get("user_id") is None:
-        return redirect("/login")
-    return render_template('pomodoro-timer.html')
-
-
+    
+    
 @app.route("/logout")
 def logout():
     if session.get("user_id") is None:
