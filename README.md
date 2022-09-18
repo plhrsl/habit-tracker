@@ -32,6 +32,6 @@ The database used was SQLite, with the SQLAlchemy library.
 
 There are three tables in the database: user, habit and checkbox. The last one is updated dinamically using JavaScript POST requests to keep track of the habits checkboxes.
 
-##### Video demo:
+##### Video demo: https://youtu.be/_cSq8iq5VMQ
 
 *My name is Luana, and this was my final project for CS50!*
